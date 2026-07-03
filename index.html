@@ -1,17 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indo eu indo eu...</title>
+    <title>Bem-vindos | Alexandra & Pedro</title>
     
-    <meta http-equiv="refresh" content="0; url=http://167.233.113.17/">
+    <!-- Redirecionamento automático após 2 segundos -->
+    <meta http-equiv="refresh" content="2;url=https://casamentoalexandraepedro.duckdns.org/">
     
-    <script>
-        window.location.href = "http://167.233.113.17/";
-    </script>
+    <style>
+        /* Variáveis de cor para facilitar ajustes */
+        :root {
+            --primary-color: #4a4a4a;
+            --bg-color: #f8f9fd; /* Tom pérola/creme muito suave, ideal para casamentos */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: var(--bg-color);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        /* Animação e estilo do Logótipo */
+        .logo-container {
+            margin-bottom: 2.5rem;
+            animation: pulse 2.5s infinite ease-in-out;
+        }
+
+        .logo-container img {
+            max-width: 250px; /* Tamanho ajustável conforme o logótipo */
+            height: auto;
+            border-radius: 0px; /* Suaviza as pontas caso a imagem não seja transparente */
+           
+        }
+
+        /* Animação de Carregamento (Spinner) */
+        .spinner {
+            width: 35px;
+            height: 35px;
+            border: 3px solid rgba(0, 0, 0, 0.08);
+            border-radius: 50%;
+            border-top-color: var(--primary-color);
+            animation: spin 1s cubic-bezier(0.55, 0.15, 0.45, 0.85) infinite;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        /* Estilo do link de segurança */
+        .manual-link {
+            font-size: 0.85rem;
+            color: #999;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .manual-link:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        /* Keyframes das animações */
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.03); opacity: 0.9; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <p>Se não fores redirecionado automaticamente, <a href="http://167.233.113.17/">clica aqui</a>.</p>
+
+    <div class="logo-container">
+        <img src="https://casamentoalexandraepedro.duckdns.org/uploads/ALEXANDRA-LOGO.jpg" alt="Logo Casamento Alexandra e Pedro">
+    </div>
+    
+    <div class="spinner"></div>
+    
+    <div class="message">A entrar na galeria...</div>
+    
+    <a href="https://casamentoalexandraepedro.duckdns.org/" class="manual-link">Se não fores redirecionado, clica aqui.</a>
+
 </body>
 </html>
